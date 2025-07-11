@@ -69,8 +69,8 @@ Website resmi Forum Komunikasi Perpustakaan Desa/Kelurahan (FKPDK) yang menghubu
 
 1. **Clone repositori**
 ```bash
-git clone https://github.com/irfan-lie92/desa-forum-komunikasi-plus.git
-cd desa-forum-komunikasi-plus
+git clone https://github.com/irfan-lie92/fkpdk-update.git
+cd fkpdk-app
 ```
 
 2. **Install dependensi**
