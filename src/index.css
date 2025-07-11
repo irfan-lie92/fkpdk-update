@@ -1,0 +1,226 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom library theme colors */
+    --library-50: 210 40% 98%;
+    --library-100: 210 40% 96%;
+    --library-200: 210 40% 90%;
+    --library-300: 210 40% 80%;
+    --library-400: 210 40% 70%;
+    --library-500: 210 40% 60%;
+    --library-600: 210 40% 50%;
+    --library-700: 210 40% 40%;
+    --library-800: 210 40% 30%;
+    --library-900: 210 40% 20%;
+
+    /* Knowledge theme colors */
+    --knowledge-50: 25 40% 98%;
+    --knowledge-100: 25 40% 96%;
+    --knowledge-200: 25 40% 90%;
+    --knowledge-300: 25 40% 80%;
+    --knowledge-400: 25 40% 70%;
+    --knowledge-500: 25 40% 60%;
+    --knowledge-600: 25 40% 50%;
+    --knowledge-700: 25 40% 40%;
+    --knowledge-800: 25 40% 30%;
+    --knowledge-900: 25 40% 20%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom gradient classes */
+@layer utilities {
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--library-600)) 0%, hsl(var(--knowledge-600)) 100%);
+  }
+  
+  .bg-gradient-library {
+    background: linear-gradient(135deg, hsl(var(--library-500)) 0%, hsl(var(--library-700)) 100%);
+  }
+  
+  .bg-gradient-knowledge {
+    background: linear-gradient(135deg, hsl(var(--knowledge-500)) 0%, hsl(var(--knowledge-700)) 100%);
+  }
+
+  .library-50 { color: hsl(var(--library-50)); }
+  .library-100 { color: hsl(var(--library-100)); }
+  .library-200 { color: hsl(var(--library-200)); }
+  .library-300 { color: hsl(var(--library-300)); }
+  .library-400 { color: hsl(var(--library-400)); }
+  .library-500 { color: hsl(var(--library-500)); }
+  .library-600 { color: hsl(var(--library-600)); }
+  .library-700 { color: hsl(var(--library-700)); }
+  .library-800 { color: hsl(var(--library-800)); }
+  .library-900 { color: hsl(var(--library-900)); }
+
+  .bg-library-50 { background-color: hsl(var(--library-50)); }
+  .bg-library-100 { background-color: hsl(var(--library-100)); }
+  .bg-library-200 { background-color: hsl(var(--library-200)); }
+  .bg-library-300 { background-color: hsl(var(--library-300)); }
+  .bg-library-400 { background-color: hsl(var(--library-400)); }
+  .bg-library-500 { background-color: hsl(var(--library-500)); }
+  .bg-library-600 { background-color: hsl(var(--library-600)); }
+  .bg-library-700 { background-color: hsl(var(--library-700)); }
+  .bg-library-800 { background-color: hsl(var(--library-800)); }
+  .bg-library-900 { background-color: hsl(var(--library-900)); }
+
+  .text-library-50 { color: hsl(var(--library-50)); }
+  .text-library-100 { color: hsl(var(--library-100)); }
+  .text-library-200 { color: hsl(var(--library-200)); }
+  .text-library-300 { color: hsl(var(--library-300)); }
+  .text-library-400 { color: hsl(var(--library-400)); }
+  .text-library-500 { color: hsl(var(--library-500)); }
+  .text-library-600 { color: hsl(var(--library-600)); }
+  .text-library-700 { color: hsl(var(--library-700)); }
+  .text-library-800 { color: hsl(var(--library-800)); }
+  .text-library-900 { color: hsl(var(--library-900)); }
+
+  .border-library-50 { border-color: hsl(var(--library-50)); }
+  .border-library-100 { border-color: hsl(var(--library-100)); }
+  .border-library-200 { border-color: hsl(var(--library-200)); }
+  .border-library-300 { border-color: hsl(var(--library-300)); }
+  .border-library-400 { border-color: hsl(var(--library-400)); }
+  .border-library-500 { border-color: hsl(var(--library-500)); }
+  .border-library-600 { border-color: hsl(var(--library-600)); }
+  .border-library-700 { border-color: hsl(var(--library-700)); }
+  .border-library-800 { border-color: hsl(var(--library-800)); }
+  .border-library-900 { border-color: hsl(var(--library-900)); }
+
+  .hover\:bg-library-600:hover { background-color: hsl(var(--library-600)); }
+  .hover\:bg-library-700:hover { background-color: hsl(var(--library-700)); }
+  .hover\:text-library-600:hover { color: hsl(var(--library-600)); }
+  .hover\:text-library-700:hover { color: hsl(var(--library-700)); }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Utility for line clamping */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
