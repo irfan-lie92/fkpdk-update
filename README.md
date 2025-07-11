@@ -195,17 +195,5 @@ Kami menerima kontribusi dari komunitas! Silakan:
 4. Push ke branch (`git push origin feature/nama-fitur`)
 5. Buat Pull Request
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
-## 🙏 Dukungan
-
-Jika Anda memiliki pertanyaan atau memerlukan bantuan, silakan:
-- Buka issue di GitHub
-- Hubungi kami melalui email: info@fkpdk.org
-- Kunjungi website: [www.fkpdk.org](http://www.fkpdk.org)
-
----
 
 **FKPDK** - Membangun Literasi, Memperkuat Bangsa 📚✨
