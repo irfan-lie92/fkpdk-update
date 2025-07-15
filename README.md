@@ -38,6 +38,7 @@ Website resmi Forum Komunikasi Perpustakaan Desa/Kelurahan (FKPDK) yang menghubu
 ## 🛠️ Teknologi yang Digunakan
 
 ### Frontend
+- **Next** - Framework
 - **React 18** - Library JavaScript untuk membangun user interface
 - **TypeScript** - Superset JavaScript dengan type safety
 - **Vite** - Build tool dan development server yang cepat
