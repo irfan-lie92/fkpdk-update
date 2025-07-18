@@ -301,31 +301,6 @@ PORT=5000
 NODE_ENV=development
 ```
 
-## 🤝 Kontribusi
-
-Kami menerima kontribusi dari komunitas! Silakan:
-1. Fork repositori ini
-2. Buat branch untuk fitur baru (`git checkout -b feature/nama-fitur`)
-3. Commit perubahan (`git commit -m 'Menambah fitur baru'`)
-4. Push ke branch (`git push origin feature/nama-fitur`)
-5. Buat Pull Request
-
-### Panduan Kontribusi
-- Pastikan code mengikuti standard TypeScript dan ESLint
-- Tambahkan unit tests untuk fitur baru
-- Update dokumentasi jika diperlukan
-- Gunakan conventional commits untuk pesan commit
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
-## 🙏 Dukungan
-
-Jika Anda memiliki pertanyaan atau memerlukan bantuan, silakan:
-- Buka issue di GitHub
-- Hubungi kami melalui email: info@fkpdk.org
-- Kunjungi website: [www.fkpdk.org](http://www.fkpdk.org)
 
 ## 🔄 Changelog
 
